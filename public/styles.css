@@ -35,11 +35,11 @@ h1 {
 }
 
 .result {
-  width: 100%;
+  width: 99%;
   font-size: 2rem;
 }
 
-.input {
+#input {
   border-width: 0px;
   background: #ffffff;
   font-size: 2rem;

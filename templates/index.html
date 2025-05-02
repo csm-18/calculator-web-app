@@ -13,39 +13,39 @@
       <div class="calculator-contents">
         <div class="result-container"><input type="text" class="result" readonly placeholder="Result"></input></div>
         <div class="input-container">
-          <input type="text" placeholder="0" class="input" />
-          <button class="clear">Clear</button>
+          <input type="text" placeholder="0" id="input" autocomplete="off"/>
+          <button class="clear" onclick="Clear()">Clear</button>
         </div>
         <div class="buttons-container">
           <div class="buttons-row">
-            <button class="btn">⌫</button>
-            <button class="btn">(</button>
-            <button class="btn">)</button>
-            <button class="btn">=</button>
+            <button class="btn" onclick="Backspace()">⌫</button>
+            <button class="btn" onclick="NumberOrSymbolClick('(')">(</button>
+            <button class="btn" onclick="NumberOrSymbolClick(')')">)</button>
+            <button class="btn" onclick="NumberOrSymbolClick('=')">=</button>
           </div>
           <div class="buttons-row">
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn">÷</button>
+            <button class="btn" onclick="NumberOrSymbolClick('7')">7</button>
+            <button class="btn" onclick="NumberOrSymbolClick('8')">8</button>
+            <button class="btn" onclick="NumberOrSymbolClick('9')">9</button>
+            <button class="btn" onclick="NumberOrSymbolClick('/')">/</button>
           </div>
           <div class="buttons-row">
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn">×</button>
+            <button class="btn" onclick="NumberOrSymbolClick('4')">4</button>
+            <button class="btn" onclick="NumberOrSymbolClick('5')">5</button>
+            <button class="btn" onclick="NumberOrSymbolClick('6')">6</button>
+            <button class="btn" onclick="NumberOrSymbolClick('*')">*</button>
           </div>
           <div class="buttons-row">
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">-</button>
+            <button class="btn" onclick="NumberOrSymbolClick('1')">1</button>
+            <button class="btn" onclick="NumberOrSymbolClick('2')">2</button>
+            <button class="btn" onclick="NumberOrSymbolClick('3')">3</button>
+            <button class="btn" onclick="NumberOrSymbolClick('-')">-</button>
           </div>
           <div class="buttons-row">
-            <button class="btn">0</button>
-            <button class="btn">.</button>
-            <button class="btn">%</button>
-            <button class="btn">+</button>
+            <button class="btn" onclick="NumberOrSymbolClick('0')">0</button>
+            <button class="btn" onclick="NumberOrSymbolClick('.')">.</button>
+            <button class="btn" onclick="NumberOrSymbolClick('%')">%</button>
+            <button class="btn" onclick="NumberOrSymbolClick('+')">+</button>
           </div>
         </div>
       </div>
