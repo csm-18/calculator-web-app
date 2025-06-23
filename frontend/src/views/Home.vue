@@ -1,8 +1,13 @@
-<script setup></script>
+<script setup>
+import Calculator from '../components/Calculator.vue'
+</script>
 
 <template>
   <div class="main-con">
     <h1>Calculator</h1>
+    <div class="calculator-con">
+      <Calculator />
+    </div>
   </div>
 </template>
 
@@ -10,7 +15,6 @@
 .main-con {
   display: flex;
   flex-direction: column;
-  background: #000;
   width: 100vw;
   height: 100vh;
 
@@ -21,6 +25,14 @@
     font-size: 3.5rem;
     font-family: sans;
     padding: 1rem;
+  }
+
+  .calculator-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    flex: 1;
   }
 }
 </style>
