@@ -1,11 +1,26 @@
 <script setup></script>
 
 <template>
-  <h1>Hello!</h1>
+  <div class="main-con">
+    <h1>Calculator</h1>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-h1 {
-  text-align: center;
+.main-con {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+
+  h1 {
+    text-align: center;
+    color: white;
+    background: green;
+    font-size: 3.5rem;
+    font-family: sans;
+    padding: 1rem;
+  }
 }
 </style>
