@@ -4,9 +4,12 @@ import Buttons from '@/components/Buttons.vue'
 
 <template>
   <div class="calc-con">
-    <div class="display">
-      <p class="result">0.0</p>
-      <input class="input" type="text" />
+    <div class="input-con">
+      <input class="input" type="text" autofocus />
+    </div>
+    <p class="result">0.0</p>
+    <div class="backspace-con">
+      <button class="backspace">BS</button>
     </div>
     <Buttons />
   </div>
@@ -18,5 +21,39 @@ import Buttons from '@/components/Buttons.vue'
   flex-direction: column;
   background: greenyellow;
   padding: 1rem;
+  border-radius: 12px;
+
+  .result {
+    text-align: end;
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .input-con {
+    width: 100%;
+    padding-bottom: 1rem;
+
+    .input {
+      background: transparent;
+      max-width: 18rem;
+      text-align: end;
+      padding: 0.5rem 1rem;
+      border: 0;
+      font-size: 2.5rem;
+      caret-color: green;
+    }
+  }
+  .backspace-con {
+    display: flex;
+    justify-content: end;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+
+    .backspace {
+      font-size: 1.5rem;
+      padding: 0.1rem 0.5rem;
+      border-radius: 5px;
+    }
+  }
 }
 </style>
