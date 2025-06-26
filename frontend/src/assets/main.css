@@ -4,7 +4,10 @@
 :root {
   --light-blue: #90d5ff;
   --blue: #66a7e1;
+  --ash-blue: rgb(222, 234, 249);
   --light-orange: #fd8235;
+  --red: rgb(214, 54, 54);
+  --green: rgb(29, 158, 29);
 }
 
 body {

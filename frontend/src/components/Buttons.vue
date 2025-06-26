@@ -2,7 +2,7 @@
 
 <template>
   <div class="buttons-con">
-    <button>C</button>
+    <button class="clear">C</button>
     <button>(</button>
     <button>)</button>
     <button>/</button>
@@ -21,7 +21,7 @@
     <button>0</button>
     <button>%</button>
     <button>.</button>
-    <button>=</button>
+    <button class="equals">=</button>
   </div>
 </template>
 
@@ -37,7 +37,15 @@
     padding: 0.8rem;
     border: 0;
     border-radius: 50%;
-    background: white;
+    background: var(--ash-blue);
+  }
+
+  .clear {
+    background: var(--red);
+  }
+
+  .equals {
+    background: var(--green);
   }
 }
 </style>
