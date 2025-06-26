@@ -52,12 +52,14 @@ import Buttons from '@/components/Buttons.vue'
     display: flex;
     justify-content: end;
     padding-top: 1.5rem;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 
     .backspace {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       padding: 0.1rem 0.5rem;
-      border-radius: 5px;
+      border-radius: 50px;
+      background: var(--light-orange);
+      border: 0;
     }
   }
 }
