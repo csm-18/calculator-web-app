@@ -37,6 +37,7 @@
     padding: 0.8rem;
     border: 0;
     border-radius: 50%;
+    background: white;
   }
 }
 </style>
