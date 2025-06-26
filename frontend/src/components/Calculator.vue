@@ -19,7 +19,7 @@ import Buttons from '@/components/Buttons.vue'
 .calc-con {
   display: flex;
   flex-direction: column;
-  background: greenyellow;
+  background: var(--blue);
   padding: 1rem;
   border-radius: 12px;
 
@@ -27,6 +27,7 @@ import Buttons from '@/components/Buttons.vue'
     text-align: end;
     font-size: 2rem;
     padding: 0 1rem;
+    color: black;
   }
 
   .input-con {
@@ -40,7 +41,11 @@ import Buttons from '@/components/Buttons.vue'
       padding: 0.5rem 1rem;
       border: 0;
       font-size: 2.5rem;
-      caret-color: green;
+      caret-color: var(--light-gray-blue);
+      color: black;
+    }
+    .input:focus {
+      outline: none;
     }
   }
   .backspace-con {

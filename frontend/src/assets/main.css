@@ -1,3 +1,11 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Baloo+Bhaijaan+2:wght@400..800&family=Baloo+Chettan+2:wght@400..800&family=El+Messiri:wght@400..700&family=Gruppo&family=Huninn&family=Itim&family=Julee&family=Merienda:wght@300..900&family=Michroma&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+:root {
+  --light-blue: #90d5ff;
+  --blue: #66a7e1;
+}
+
 body {
   width: 100vw;
   height: 100vh;

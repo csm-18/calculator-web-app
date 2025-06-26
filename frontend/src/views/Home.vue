@@ -20,18 +20,20 @@ import Calculator from '../components/Calculator.vue'
 
   h1 {
     text-align: center;
-    color: white;
-    background: green;
-    font-size: 3.5rem;
-    font-family: sans;
-    padding: 1rem;
+    background: white;
+    color: var(--blue);
+    font-size: 4.5rem;
+    padding: 0.5rem;
+    font-family: 'Gruppo', sans-serif;
+    font-weight: 600;
+    font-style: normal;
   }
 
   .calculator-con {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000;
+    background: white;
     flex: 1;
   }
 }
