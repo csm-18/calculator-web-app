@@ -12,29 +12,22 @@ import Calculator from '../components/Calculator.vue'
 </template>
 
 <style lang="scss" scoped>
-.main-con {
+h1 {
+  text-align: center;
+  background: white;
+  color: var(--blue);
+  font-size: 4.5rem;
+  padding: 1rem;
+  font-family: 'Gruppo', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.calculator-con {
   display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-
-  h1 {
-    text-align: center;
-    background: white;
-    color: var(--blue);
-    font-size: 4.5rem;
-    padding: 0.5rem;
-    font-family: 'Gruppo', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  .calculator-con {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    flex: 1;
-  }
+  justify-content: center;
+  align-items: center;
+  background: white;
+  flex: 1;
 }
 </style>
