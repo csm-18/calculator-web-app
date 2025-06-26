@@ -46,7 +46,6 @@
 
   .equals {
     background: var(--green);
-    background: white;
   }
 }
 </style>
