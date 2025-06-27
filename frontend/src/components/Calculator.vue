@@ -1,13 +1,18 @@
 <script setup>
+import { ref } from 'vue'
+
 import Buttons from '@/components/Buttons.vue'
+
+const expression = ref('0.0')
+const result = ref('0.0')
 </script>
 
 <template>
   <div class="calc-con">
     <div class="input-con">
-      <input class="input" type="text" autofocus inputmode="none" />
+      <input class="input" v-model="expression" type="text" autofocus inputmode="none" />
     </div>
-    <p class="result">0.0</p>
+    <p class="result">{{ result }}</p>
     <div class="backspace-con">
       <button class="backspace">BS</button>
     </div>
