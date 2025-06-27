@@ -5,6 +5,10 @@ import Buttons from '@/components/Buttons.vue'
 
 const expression = ref('0.0')
 const result = ref('0.0')
+
+function backspace() {
+  expression.value = expression.value.slice(0, -1)
+}
 </script>
 
 <template>
@@ -14,7 +18,7 @@ const result = ref('0.0')
     </div>
     <p class="result">{{ result }}</p>
     <div class="backspace-con">
-      <button class="backspace">BS</button>
+      <button class="backspace" @click="backspace">BS</button>
     </div>
     <Buttons />
   </div>
