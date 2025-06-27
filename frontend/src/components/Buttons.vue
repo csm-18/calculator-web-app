@@ -48,4 +48,16 @@
     background: var(--green);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .buttons-con {
+    padding: 2.5rem 1rem 1rem 1rem;
+    gap: 0.5rem;
+
+    button {
+      font-size: 2rem;
+      padding: 0.6rem;
+    }
+  }
+}
 </style>

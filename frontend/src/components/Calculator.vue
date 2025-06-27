@@ -17,8 +17,6 @@ import Buttons from '@/components/Buttons.vue'
 
 <style lang="scss" scoped>
 .calc-con {
-  display: flex;
-  flex-direction: column;
   background: var(--blue);
   padding: 1rem;
   border-radius: 12px;
@@ -60,6 +58,25 @@ import Buttons from '@/components/Buttons.vue'
       border-radius: 50px;
       background: var(--light-orange);
       border: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .calc-con {
+    border-radius: 0;
+
+    .input-con {
+      .input {
+        font-size: 3rem;
+      }
+    }
+
+    .backspace-con {
+      padding-top: 2rem;
+      .backspace {
+        padding: 0.1rem 0.8rem;
+      }
     }
   }
 }

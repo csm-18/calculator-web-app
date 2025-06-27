@@ -30,4 +30,13 @@ h1 {
   background: white;
   flex: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    display: none;
+  }
+
+  .calculator-con {
+  }
+}
 </style>
