@@ -5,7 +5,7 @@ import Buttons from '@/components/Buttons.vue'
 <template>
   <div class="calc-con">
     <div class="input-con">
-      <input class="input" type="text" autofocus />
+      <input class="input" type="text" autofocus inputmode="none" />
     </div>
     <p class="result">0.0</p>
     <div class="backspace-con">
