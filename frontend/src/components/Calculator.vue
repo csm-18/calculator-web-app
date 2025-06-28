@@ -13,6 +13,10 @@ function backspace() {
 function append(symbol) {
   expression.value = expression.value + symbol
 }
+
+function clear() {
+  expression.value = ''
+}
 </script>
 
 <template>
@@ -24,7 +28,7 @@ function append(symbol) {
     <div class="backspace-con">
       <button class="backspace" @click="backspace">BS</button>
     </div>
-    <Buttons @append="append" />
+    <Buttons @append="append" @clear="clear" />
   </div>
 </template>
 

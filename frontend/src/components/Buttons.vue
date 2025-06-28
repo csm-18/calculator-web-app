@@ -4,6 +4,10 @@ const emit = defineEmits(['append'])
 function append(symbol) {
   emit('append', symbol)
 }
+
+function clear() {
+  emit('clear')
+}
 </script>
 
 <template>
