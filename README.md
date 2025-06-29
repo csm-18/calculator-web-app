@@ -20,7 +20,7 @@ It supports:
 
 ---
 
-<img src="./Calculator-mobile-view.jpg" height="200px" />
+<img src="./Calculator-mobile-view.jpg" height="100px" />
 <img src="./calculator-pc-view.png" height="200px" ` style="border=solid;" />
 
 ## Dependencies
