@@ -1,6 +1,6 @@
 # calculator-web-app
 
-A simple calculator web app using **html**,**css**,**js** for frontend and **deno** for calculator logic and backend.
+A simple calculator web app.
 
 It supports:
 
@@ -19,3 +19,14 @@ It supports:
 ```
 
 ---
+
+<img src="./Calculator-mobile-view.jpg" height="200px" />
+<img src="./calculator-pc-view.png" height="200px" ` />
+
+## Dependencies
+
+- code editor: vs code (vue extension)
+
+- frontend: vue 3, bun
+
+- logic: rust (as wasm pkg using wasm-pack)
