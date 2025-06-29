@@ -6,19 +6,21 @@ import Buttons from '@/components/Buttons.vue'
 import init, { calc } from '../pkg/calc.js'
 
 const expression = ref('')
-const result = ref('0')
+const result = ref('')
 
 function backspace() {
   expression.value = expression.value.slice(0, -1)
+  result.value = calc(expression.value) == 'invalid expression!' ? '' : calc(expression.value)
 }
 
 function append(symbol) {
   expression.value = expression.value + symbol
+  result.value = calc(expression.value) == 'invalid expression!' ? '' : calc(expression.value)
 }
 
 function clear() {
   expression.value = ''
-  result.value = '0'
+  result.value = ''
 }
 
 //wasm
@@ -62,6 +64,12 @@ function equals() {
     font-size: 2rem;
     padding: 0 1rem;
     color: black;
+  }
+  //when result is empty maintain its height
+  .result:empty::before {
+    content: '';
+    display: block;
+    height: 2.4rem; /* adjust to the height you need */
   }
 
   .input-con {
