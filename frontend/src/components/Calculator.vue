@@ -1,10 +1,12 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import Buttons from '@/components/Buttons.vue'
 
+import init, { calc } from '../pkg/calc.js'
+
 const expression = ref('')
-const result = ref('0.0')
+const result = ref('0')
 
 function backspace() {
   expression.value = expression.value.slice(0, -1)
@@ -16,6 +18,23 @@ function append(symbol) {
 
 function clear() {
   expression.value = ''
+  result.value = '0'
+}
+
+//wasm
+const wasmLoaded = ref(false)
+onMounted(async () => {
+  try {
+    await init()
+    wasmLoaded.value = true
+  } catch (error) {
+    console.error('Error while loading wasm module!')
+  }
+})
+function equals() {
+  if (wasmLoaded) {
+    result.value = calc(expression.value)
+  }
 }
 </script>
 
@@ -28,7 +47,7 @@ function clear() {
     <div class="backspace-con">
       <button class="backspace" @click="backspace">BS</button>
     </div>
-    <Buttons @append="append" @clear="clear" />
+    <Buttons @append="append" @clear="clear" @equals="equals" />
   </div>
 </template>
 

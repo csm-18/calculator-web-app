@@ -1,0 +1,1 @@
+/home/sai/Documents/csm/projects/web/calculator-web-app/calc/target/wasm32-unknown-unknown/release/libcalc.rlib: /home/sai/Documents/csm/projects/web/calculator-web-app/calc/src/calc/mod.rs /home/sai/Documents/csm/projects/web/calculator-web-app/calc/src/calc/parser.rs /home/sai/Documents/csm/projects/web/calculator-web-app/calc/src/lib.rs

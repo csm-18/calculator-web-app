@@ -1,5 +1,5 @@
 <script setup>
-const emit = defineEmits(['append'])
+const emit = defineEmits(['append', 'clear', 'equals'])
 
 function append(symbol) {
   emit('append', symbol)
@@ -7,6 +7,10 @@ function append(symbol) {
 
 function clear() {
   emit('clear')
+}
+
+function equals() {
+  emit('equals')
 }
 </script>
 
@@ -31,7 +35,7 @@ function clear() {
     <button @click="append('0')">0</button>
     <button @click="append('%')">%</button>
     <button @click="append('.')">.</button>
-    <button class="equals">=</button>
+    <button class="equals" @click="equals">=</button>
   </div>
 </template>
 
